@@ -12,7 +12,7 @@ INSTALL_MEMCACHED_SERVER='yes'
 
 # Install Postfix (yes/no)?
 # Postfix will be installed as a null (send-only) client. It will not receive
-# any emails.
+# any emails.s
 INSTALL_POSTFIX='yes'
 
 ### Directories ###############################################################
@@ -44,8 +44,7 @@ NGINX_CONFIGURE_ARGS="--prefix=${DESTINATION_DIR}/nginx
 --with-http_gzip_static_module
 --with-ipv6
 --without-mail_pop3_module
---without-mail_imap_module
---with-mail_smtp_module"
+--without-mail_imap_module"
 
 ###############################################################################
 
