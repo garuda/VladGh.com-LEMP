@@ -3,12 +3,12 @@
 # Install MySQL Server (yes/no)?
 # MySQL Client is installed by default to allow
 # the connection between PHP and any MySQL server.
-INSTALL_MYSQL='no'
+INSTALL_MYSQL='yes'
 
 # Memcached Server (yes/no)?
 # The PECL extension for PHP is installed by default to allow
 # the connection between PHP and any Memcached server.
-INSTALL_MEMCACHED_SERVER='no'
+INSTALL_MEMCACHED_SERVER='yes'
 
 # Install Postfix (yes/no)?
 # Postfix will be installed as a null (send-only) client. It will not receive
@@ -45,7 +45,7 @@ NGINX_CONFIGURE_ARGS="--prefix=${DESTINATION_DIR}/nginx
 --with-ipv6
 --without-mail_pop3_module
 --without-mail_imap_module
---without-mail_smtp_module"
+--with-mail_smtp_module"
 
 ###############################################################################
 
